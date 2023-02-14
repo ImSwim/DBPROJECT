@@ -1,0 +1,33 @@
+<HTML>
+	<meta charset="utf-8">
+<HEAD>
+	<TITLE> 로그인 : 경희대학교 학부 수강신청 시스템</TITLE>       
+	<link rel="icon" href="Image/favicon.png" type="image/x-icon" >
+</HEAD>
+	<STYLE>
+		BODY {background-image: url("Image/khu_bg.png");
+		     	background-repeat : no-repeat;
+		     	background-position: center;
+		     	background-size: cover;
+		  	 } 
+	</STYLE>
+
+<BODY>
+	<FORM action= LogIn.php method= get>
+	<TABLE width=400 height=450 bgcolor= white border= 20 bordercolor= white
+			style="position: absolute ; left: 60%; top: 230; ">
+	<TH COLSPAN = 100% align= left ><FONT size= 4> 본인의 로그인 권한에 맞춰 체크해주세요. </FONT></TH><TR>
+	<TH COLSPAN = 50% align= center> <FONT size= 4>  교수  </FONT>  <input type = radio name=Who value=Professor>  </TH> 
+	<TH COLSPAN = 50% align= center> <FONT size= 4> 학생  </FONT>  <input type = radio name=Who value=Student checked="checked">  </TH><TR>
+	<TH COLSPAN = 100% align= left ><FONT size= 4>아이디 </FONT></TH><TR>
+	<TH  COLSPAN = 100% align= left><input type = text name=ID size= 30> </TH><TR>
+	<TH   COLSPAN = 100% align= left><FONT size= 4>비밀번호 </FONT></TH><TR>
+	<TH  COLSPAN = 100% align= left><input type = password name = Password size= 30> </TH><TR>
+		<TH  COLSPAN = 60%><input type = submit value= 로그인
+									 style="width:60pt;height:30pt;"> </TH>
+		<TH COLSPAN = 50%><A HREF="SignUp.html"> 회원가입 하러가기 </TH>
+	</TABLE>
+	</FONT>
+	</FORM>
+</BODY>
+</HTML>

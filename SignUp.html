@@ -1,0 +1,44 @@
+<HTML>
+	<meta charset="utf-8">
+<HEAD>
+	<TITLE> 회원가입 : 경희대학교 학부 수강신청 시스템</TITLE>       
+	<link rel="icon" href="Image/favicon.png" type="image/x-icon" >
+</HEAD>
+	<STYLE>
+		BODY {background-image: url("Image/khu_bg_2.png");
+		     	background-repeat : no-repeat;
+		     	background-position: center;
+		     	background-size: cover;
+		  	 } 
+	</STYLE>
+
+<BODY>
+	<FORM action= SignUp.php , method= get>
+	<TABLE width=60% height=400 bgcolor= white border=20 bordercolor= #9A0E17	
+			style="position: absolute ; left: 20%; top: 230; ">
+	<TH COLSPAN = 20%><FONT size= 5> 성함 </FONT></TH>
+	<TH  COLSPAN= 10%><input type = text name=Name size= 10> </TH>
+	<TH COLSPAN = 20%><FONT size= 5>신분 </FONT></TH>
+	<TD COLSPAN = 10%  align= center> <FONT size= 4>  교수  </FONT> <input type = radio name=Who value=Professor><BR>
+						   <FONT size= 4> 학생  </FONT>  <input type = radio name=Who value=Student checked="checked">  </TD>
+	<TH COLSPAN = 20%> <FONT size= 5> 학과  </FONT></TH>
+		<TH COLSPAN = 20%><select name = Department >
+			<option> 전공 선택
+			<option value=기계공학과>기계공학과
+			<option value=산업경영공학과>산업경영공학과
+			<option value=화학공학과> 화학공학과
+			<option value=원자력공학과> 원자력공학과
+			<option value=환경학및환경공학과> 환경학및환경공학과
+			<option value=건축공학과> 건축공학과
+			<option value=사회기반시스템공학과> 사회기반시스템공학과
+		</select></TH><TR>
+	<TH COLSPAN = 30% align= left ><FONT size= 4> 아이디 (학생인 경우, 10자리 학번을 입력해주세요.) </FONT></TH>
+	<TH COLSPAN = 70% align= left><input type = text name=ID size= 30 maxlength=20> </TH><TR>
+	<TH COLSPAN = 30% align= left><FONT size= 4> 비밀번호 (15자리 이내로 입력해주세요.)</FONT></TH>
+	<TH COLSPAN = 70% align= left><input type = password name = Password size= 30> </TH><TR>
+	<TH COLSPAN = 60%><input type = submit value= '회원가입 완료' style="width:100pt;height:30pt;"> </TH><TH COLSPAN = 40%><A HREF='LogIn.html'>바로 로그인하러가기</A></TH></TABLE><P>
+	</TABLE>
+	</FONT>
+	</FORM>
+</BODY>
+</HTML>
